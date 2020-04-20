@@ -1,0 +1,46 @@
+this = la instancia actual
+public = lo pueden usar todos
+private = solo la instancia del objeto
+
+Memoria: STACK y HEAP y static
+variables locales ---> stack
+Instancias de objetos ---> heap
+referencias ---> stack (especie de puntero al objeto)
+
+los pasajes de parametros por valor en java
+Variables locales a metodos deben inicializarse explicitamente sino se te hace mierda el programa
+
+wrappers sirven para manejar los tipo primitivos como objetos y son inmutables,(para cambiar el valor se crea un nuevo objeto )
+(char -> Character / int -> Integer)
+java no es puramente orientado a objetos porque tiene los tipos primitivos.
+trabajar con tipos primitivos es mas rapido que con un wrapper
+
+No usar versiones anteriores a J2SE 5.0 o la van a cagar 
+
+Creacion e inicializacion
+1 Espacio en stack para variable
+2 Espacio en heap para objeto
+3 Inicializacion de atributos
+4 Constructor
+5 Se asigna referencia de objeto a la variable
+(contructor por defecto clase(); sin parametros)
+
+memoria stack guarda las variables en contexto de donde se ejecutan, pueden haber varias al mismo tiempo, pero son disjuntas
+memoria heap es la compartida!
+
+manipular objeto (mandar mensaje a obj)
+nombredelobjeto.metododelobjeto(parametros);
+
+variables de instancia = fuera del metodo
+variables locales = adentro del metodo
+las variables que son locales al metodo,cuando el metodo termina,se eliminan de la memoria stack? Respuesta: Si
+
+static declara atributos y metodos asociados con la clase y son compartidas por todas las instancias de la misma clase
+
+Arreglos:
+En memoria heap: length, indices(de 0 a length-1) y datos
+guarda valores de un mismo tipo
+
+For-each: nueva forma de recoorer un arreglo completo.
+intruccion: for (int "nombre_variable": "nombre_arreglo")
+Se lee: para cada elemento "nombre_variable" del tipo int (en este caso es int, pero puede ser otro) en el arreglo nombre_arreglo

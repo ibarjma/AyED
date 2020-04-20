@@ -1,0 +1,73 @@
+Pasaje de parámetros
+
+Por Java los parametros se pasan siempre por valor.
+
+El pasaje de parametros "por referencia" debe hacerse pasando referencias a objetos. 
+Si usamos un metodo void y mandamos primitivos como parametro, wrappers tambien, chau amigo. 
+Aunque se envien como referencia.
+
+Wrapper  y string son inmutables
+
+⚠NO!!!! PASAR PRIMITIVOS NI WRAPPERS COMO PARAMETRO O LA VAN A CAGAR!
+Recomendado retornar un objeto!😉😉
+
+El return:
+si se usa un return (tipo funcion), no hay problema con primitivos o wrappers o strings, a diferencia de en metodos void adonde no te va a retornar los valores modificados por que es por valor y no por referencia. Usando return ya lo que devuelve es un objeto nuevo. 
+Usar return es más seguro.
+Herencia
+
+la herencia toma una clase existente y construye una version especializada.
+el principal benediferencia entre metodo de clase y de instancia
+
+metodo de clase se puede llamar sin instancias(ejemplo constructores). instancias son para cuando necesito tener la posibilidad de tener varias instancias de un objeto(ejemplo getter y setter).
+
+el this.variable; solo se usa en un metodo de instancia. Pero nunca en metodos de clase. 
+
+Cuando se carga una clase a memoria? 
+instancia:
+    Contacto c = new Contacto() - se carga cuando instancio. 
+Clase:
+    Math.PI lo estatico se carg cuando se carga la clase, cuando hago uso de algun metodo o variable de clase.
+
+ejemplo:
+clases static
+variables static 
+
+public class Math { 
+ public static double PI = 3.1416:   } 
+public static final double PI = 3.1416;
+ 
+ Static es de clase 
+un ejemplo es con los contactos de teléfono. La ID de cada usuario se calculaba sumandole 1 a una variable static que todos los objetos contacots compartían,  y siempre devolvía el último ID registrado
+
+Herencia
+
+la herencia toma una clase existente y construye una version especializada.
+el principal beneficio es la reusabilidad de codigo 
+una subclase puede reemplazar o modificar el comportamiento heredado
+
+instancia de superclase: invoco metodos de la superclase
+instancia de subclase: invoco metodos  de la subclase y los publicos de la superclase
+
+sobrescritura de clases - la subclase tiene un metodo con el mismo encabezado (nombre tipo de parametros etc) que una de la superclase pero con el cuerpo diferente especifico a la subclase
+
+el super. se usa para invocar metodos de la clase inmediatamente superior por ejemplo super.toString();
+el this lo usan solo para objetos instanciados sino la van a RECONTRA CAGAR
+
+upcasting
+el objeto recuerda que tipo es
+Solo puedo invocar metodos de la superclase
+vehiculo v = new auto();
+tipo real es un auto 
+
+upcasting automatico: 
+public void (vehiculo v)
+este metodo que reciibe un vehiculo puede recibir una moto por que es un vehiculo y se hace un upcasting imediatamente 
+aunque enviemos un sin upcasing primero moto m = new moto()
+
+Si un metodo de la subclase coincide en nombre, tipo de retorno y lista de argumentos con un metodo de la superclase, lo sobreescribe. Entonces la subclase hereda todo menos ese metodo
+
+Clase Object
+
+Todas las clases en Java son subclases de la clase Object, y heredan los metodos
+equals() y toString(), los cuales deberemos sobreescribir para realizar comparacin
