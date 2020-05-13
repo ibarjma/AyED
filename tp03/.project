@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>tp03</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/ejercicio1/ArbolGeneral.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/git/AyED/tp04_ag/tp04/ejercicio1/ArbolGeneral.java</locationURI>
+		</link>
+		<link>
+			<name>src/ejercicio1/NodoGeneral.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/git/AyED/tp04_ag/tp04/ejercicio1/NodoGeneral.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
